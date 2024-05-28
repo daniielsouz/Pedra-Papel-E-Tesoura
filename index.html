@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pedra-Papel-Tesoura</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <ul class="cabecalho_itens">
+        <li class="pedra">Pedra</li>
+        <li class="papel">Papel</li>
+        <li class="tesoura">Tesoura</li>
+      </ul>
+
+      <h2 class="cabecalho_subtitulo">Como funciona?</h2>
+      <p class="cabecalho_texto">
+        Pedra perde para papel (o papel embrulha a pedra); papel perde para
+        tesoura (esta corta o primeiro); e, finalmente, a tesoura perde para a
+        pedra, que quebra aquela.
+      </p>
+    </header>
+    <main>
+      <section class="lados">
+        <h3 class="titulo adversario">Adversário</h3>
+        <p class="resultado adversario_lance">Lance adversário</p>
+      </section>
+
+      <section class="resultado_jogo">
+        <div class="resumo_jogos">
+          <p class="marcador marcador_jogador">0</p>
+          <p class="marcador_nome">Você</p>
+        </div>
+
+        <p class="resultado_jogo_titulo"></p>
+
+        <div class="resumo_jogos">
+          <p class="marcador marcador_adversario">0</p>
+          <p class="marcador_nome">adversário</p>
+        </div>
+      </section>
+
+      <section class="lados">
+        <p class="resultado jogador_lance">Escolha seu lance!</p>
+        <h3 class="titulo jogador">Você</h3>
+        <div class="botoes">
+          <button class="botoes_escolha" id="pedra" value="pedra">Pedra</button>
+          <button class="botoes_escolha" id="papel" value="papel">Papel</button>
+          <button class="botoes_escolha" id="tesoura" value="tesoura">
+            Tesoura
+          </button>
+        </div>
+      </section>
+      <section class="sessao_jogar">
+        <button class="botao_jogar jogar">Jogar</button>
+      </section>
+    </main>
+  </body>
+</html>

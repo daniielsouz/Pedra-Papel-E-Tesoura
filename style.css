@@ -1,0 +1,118 @@
+
+@import url(style/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root{
+  --cor-fundo:#A04838;
+  --fundo-linear:linear-gradient(-130deg, #B53731, #75403D);
+}
+body{
+  background:var(--fundo-linear);
+  height: 100vh;
+}
+
+
+.cabecalho{
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5em;
+}
+.cabecalho_itens{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.pedra{
+  margin-left: 1em;
+}
+.papel{
+  margin-left: 1.5em ;
+  
+}
+.tesoura{
+  margin-left: 2em;
+}
+.cabecalho_subtitulo{
+  padding: 1em;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lados{
+  height: 30vh;
+  text-align: center;
+}
+.titulo{
+  font-size: 24px;
+  padding: 2em;
+}
+.resultado{
+  padding: 1.5em;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.resultado_jogo{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em; 
+  
+}
+.resultado_jogo_titulo{
+  padding-left: 1.5em;
+}
+.resumo_jogos{
+  text-align: center;
+}
+.marcador{
+  color: white;
+}
+.marcador_nome{
+  margin: 1em 0;
+}
+.palpite_anterior{ 
+  text-transform: uppercase;
+}
+.resultado_jogo_titulo{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.botoes{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  padding-top: 1em;
+  
+}
+.botoes_escolha, .botao_jogar{ 
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.5em 2em;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 10px black;
+}
+.botao_jogar{
+  margin-right: 1em;
+}
+.botoes_escolha:active, .botao_jogar:active{
+  transition: 0.2s;
+  box-shadow: none;
+}
+.botoes_escolha:hover, .botao_jogar:hover{
+  background-color: var(--cor-fundo);
+}
+.sessao_jogar{
+  text-align: center;
+}
